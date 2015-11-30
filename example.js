@@ -15,3 +15,15 @@ var ab = {
  "B can't see this"
 })()
 /* #end */
+
+// #if version-b,version-c
+(function(){
+ "A can't see this"
+})()
+// #end
+
+// #if version-a,version-c
+(function(){
+ "B can't see this"
+})()
+// #end
