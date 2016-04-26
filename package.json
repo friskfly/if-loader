@@ -12,5 +12,9 @@
     "webpack": "^1.12.9"
   },
   "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/friskfly/if-loader.git"
   }
 }
