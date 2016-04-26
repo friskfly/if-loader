@@ -16,5 +16,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/friskfly/if-loader.git"
+  },
+  "homepage": "https://github.com/friskfly/if-loader/",
+  "bugs": {
+    "url": "https://github.com/friskfly/if-loader/issues"
   }
 }
