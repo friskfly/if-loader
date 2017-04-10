@@ -1,6 +1,6 @@
 {
   "name": "if-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is a preprocesser for the webpack module bundler. It support the ' if ' directive,similar to C ' #ifdef ' ",
   "main": "index.js",
   "scripts": {
