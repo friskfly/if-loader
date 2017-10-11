@@ -6,24 +6,48 @@ var ab = {
 
 /* #if version-b */
 (function(){
- "A can't see this"
+ "should be in bundle after version-b"
+})()
+/* #end */
+
+/* #ifnot version-b */
+(function(){
+ "should not be in bundle after version-b"
 })()
 /* #end */
 
 /* #if version-a */
 (function(){
- "B can't see this"
+ "should not be in bundle after version-b"
 })()
 /* #end */
 
-// #if version-b,version-c
+/* #ifnot version-a */
 (function(){
- "A can't see this"
+ "should be in bundle after version-b"
+})()
+/* #end */
+
+// #ifnot version-a,version-c
+(function(){
+ "should be in bundle after version-b"
 })()
 // #end
 
 // #if version-a,version-c
 (function(){
- "B can't see this"
+ "should not be in bundle after version-b"
+})()
+// #end
+
+// #if version-b,version-c
+(function(){
+ "should be in bundle after version-b"
+})()
+// #end
+
+//#ifnot version-b,version-c
+(function(){
+ "should not be in bundle after version-b"
 })()
 // #end
